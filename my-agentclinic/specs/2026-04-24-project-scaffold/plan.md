@@ -61,6 +61,10 @@
     - The tagline from the mission: _"A safe, judgment-free space for AI agents."_
     - A single shadcn/ui `<Button>` labelled **Book a Session** (non-functional placeholder).
 20. Style using Tailwind utility classes — centered layout, readable typography. No custom CSS files.
+    - Follow mobile-first responsive design: base styles target mobile, `sm:` breakpoints scale up for tablet and desktop.
+    - Heading: `text-2xl sm:text-4xl` — readable on small screens, larger on wide screens.
+    - Body text: `text-base sm:text-lg`.
+    - Padding: `p-4 sm:p-8` — tighter on small screens, more generous on large.
 21. Confirm the page renders correctly in the browser with no console errors.
 
 ## Task Group 7 — Smoke Test

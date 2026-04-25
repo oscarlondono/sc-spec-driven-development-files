@@ -5,7 +5,7 @@ Each phase is a single, deployable unit of work. Phases are ordered by dependenc
 ## Phase 1 — Project Scaffold
 
 - Initialize Next.js 14 project with TypeScript and App Router
-- Configure Tailwind CSS
+- Configure Tailwind CSS with mobile-first responsive design
 - Install and configure shadcn/ui
 - Set up ESLint and Prettier
 - Install and configure Vitest for spec validation (`pnpm validate`)
@@ -64,6 +64,7 @@ Each phase is a single, deployable unit of work. Phases are ordered by dependenc
 
 - Build `/dashboard/agents` page with shadcn/ui table
 - Fetch and display all agents
+- Responsive layout: table collapses to card list on mobile
 
 ## Phase 12 — Dashboard: Agent Detail Page
 
@@ -78,6 +79,7 @@ Each phase is a single, deployable unit of work. Phases are ordered by dependenc
 ## Phase 14 — Dashboard: Staff View
 
 - Build `/dashboard` home with summary stats (total agents, upcoming appointments)
+- Responsive stat cards: single column on mobile, multi-column grid on tablet and above
 - Accessible to staff only (basic auth or session placeholder)
 
 ## Phase 15 — Public Landing Page

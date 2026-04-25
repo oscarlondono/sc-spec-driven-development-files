@@ -13,12 +13,21 @@ AgentClinic is built on a server-side TypeScript stack chosen for reliability, d
 
 ## Frontend
 
-| Technology          | Role                                                     |
-| ------------------- | -------------------------------------------------------- |
-| React (via Next.js) | UI component model                                       |
-| Tailwind CSS        | Utility-first styling — fast and attractive              |
-| shadcn/ui           | Accessible dashboard components (tables, forms, dialogs) |
-| TypeScript          | End-to-end type safety                                   |
+| Technology          | Role                                                                        |
+| ------------------- | --------------------------------------------------------------------------- |
+| React (via Next.js) | UI component model                                                          |
+| Tailwind CSS        | Utility-first styling with mobile-first responsive breakpoints (`sm`, `md`, `lg`) |
+| shadcn/ui           | Accessible dashboard components (tables, forms, dialogs)                    |
+| TypeScript          | End-to-end type safety                                                      |
+
+## Design Principles
+
+All UI must follow **responsive design**: layouts, typography, and spacing must adapt gracefully from small mobile screens (≥ 320 px) through tablet (≥ 640 px) to desktop (≥ 1024 px).
+
+- Use Tailwind's mobile-first breakpoint prefix pattern: base styles target mobile, `sm:` and above override for larger screens.
+- No fixed pixel widths on layout containers — use `max-w-*` with `w-full` instead.
+- Fluid typography: heading sizes scale up at `sm:` breakpoints.
+- Touch targets must be large enough for mobile interaction (minimum 44 × 44 px).
 
 ## Backend
 
@@ -58,4 +67,4 @@ Tests live in `src/__tests__/` and use `@testing-library/react` with a `jsdom` e
 
 ## Rationale
 
-Mary (Engineering) asked for a reliable stack with TypeScript and a usable dashboard. This stack is the industry standard for that combination. Steve (Marketing) gets an attractive, fast site via Tailwind and React. Susan (Product) gets a clear data layer through Prisma to model agents, ailments, therapies, and appointments.
+Mary (Engineering) asked for a reliable stack with TypeScript and a usable dashboard. This stack is the industry standard for that combination. Steve (Marketing) gets an attractive, fast site via Tailwind and React — accessible on any device. Susan (Product) gets a clear data layer through Prisma to model agents, ailments, therapies, and appointments.

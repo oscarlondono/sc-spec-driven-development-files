@@ -68,9 +68,16 @@ pnpm validate
 - A **Book a Session** button is present and renders without errors.
 - No default Next.js placeholder content (logo, links to docs) remains.
 
+## 9. Responsive Layout
+
+- Resize the browser from 320 px to 1440 px — no horizontal scrollbar appears.
+- The heading, tagline, and button remain legible and centered at all widths.
+- Heading uses `text-2xl` at mobile width and `text-4xl` at `sm` breakpoint (640 px+).
+- Padding is tighter on mobile (`p-4`) and increases at `sm` (`p-8`).
+
 ## Merge Checklist
 
-- [ ] All 8 checks above pass locally
+- [ ] All 9 checks above pass locally
 - [ ] `pnpm validate` exits with code 0
 - [ ] `pnpm dev` curl returns 200
 - [ ] No uncommitted changes (`git status` is clean)
