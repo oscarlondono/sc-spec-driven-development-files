@@ -77,8 +77,8 @@ pnpm validate
 
 ## Merge Checklist
 
-- [ ] All 9 checks above pass locally
-- [ ] `pnpm validate` exits with code 0
-- [ ] `pnpm dev` curl returns 200
-- [ ] No uncommitted changes (`git status` is clean)
-- [ ] Branch is up to date with `main`
+- [x] All 9 checks above pass locally
+- [x] `pnpm validate` exits with code 0
+- [x] `pnpm dev` curl returns 200
+- [x] No uncommitted changes (`git status` is clean)
+- [x] Branch is up to date with `main`
