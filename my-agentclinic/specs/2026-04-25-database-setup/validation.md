@@ -41,6 +41,18 @@ pnpm build
 
 ## Merge Checklist
 
+- [x] `pnpm prisma db push` passes
+- [x] `pnpm prisma generate` passes
+- [x] `pnpm validate` passes
+- [x] `pnpm build` passes
+- [x] `.env` is listed in `.gitignore`
+- [x] `.env.example` is committed to the repository
+- [x] `.next/` is listed in `.gitignore` and not tracked by git
+- [x] Changes are limited to Phase 2 scope
+- [x] Branch is ready for review and merge
+
+## Merge Checklist
+
 - [ ] `pnpm prisma db push` passes
 - [ ] `pnpm prisma generate` passes
 - [ ] `pnpm validate` passes

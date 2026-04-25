@@ -29,6 +29,7 @@ Also included for readiness:
 | SQLite path | `prisma/dev.db` | Standard Prisma local setup; explicit and predictable |
 | Schema deployment mode | `prisma db push` only in this phase | Aligns with selected scope and keeps setup lightweight |
 | Model definitions in this phase | None beyond Prisma baseline | Domain models belong to next roadmap phase |
+| Prisma version | `^6` (not `^7`) | Prisma 7 requires Node ≥ 22.12.0; course baseline is Node 22.11.0 — one patch below that threshold |
 
 ## Out of Scope
 
