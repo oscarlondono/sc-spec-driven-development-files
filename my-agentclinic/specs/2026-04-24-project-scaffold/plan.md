@@ -60,6 +60,7 @@
     - The clinic name **AgentClinic** as an `<h1>`.
     - The tagline from the mission: _"A safe, judgment-free space for AI agents."_
     - A single shadcn/ui `<Button>` labelled **Book a Session** (non-functional placeholder).
+    - An **Available Options** panel listing all currently available user options in the web UI.
 20. Style using Tailwind utility classes — centered layout, readable typography. No custom CSS files.
     - Follow mobile-first responsive design: base styles target mobile, `sm:` breakpoints scale up for tablet and desktop.
     - Heading: `text-2xl sm:text-4xl` — readable on small screens, larger on wide screens.

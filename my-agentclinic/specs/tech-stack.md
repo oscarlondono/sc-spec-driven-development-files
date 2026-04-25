@@ -28,6 +28,7 @@ All UI must follow **responsive design**: layouts, typography, and spacing must 
 - No fixed pixel widths on layout containers — use `max-w-*` with `w-full` instead.
 - Fluid typography: heading sizes scale up at `sm:` breakpoints.
 - Touch targets must be large enough for mobile interaction (minimum 44 × 44 px).
+- Every user-facing page must include an explicit "Available Options" inventory so users can discover all currently supported actions.
 
 ## Backend
 

@@ -58,6 +58,12 @@ Starting from seeded data:
 3. Receive success feedback.
 4. Confirm appointment appears in the updated appointment history.
 
+## 7. Available Options Inventory Is Visible and Accurate
+
+- User-facing pages include an "Available Options" section.
+- Section lists all currently supported user options (web UI actions and API options).
+- Listed options match the actual behavior implemented in this MVP.
+
 ## Merge Checklist
 
 - [ ] `pnpm validate` passes
@@ -67,4 +73,5 @@ Starting from seeded data:
 - [ ] API smoke checks pass for all MVP endpoints
 - [ ] Responsive checks pass on mobile and desktop
 - [ ] End-to-end booking flow works against seeded data
+- [ ] Available Options inventory is visible and accurate on user-facing pages
 - [ ] Scope remains limited to roadmap Phases 3-10

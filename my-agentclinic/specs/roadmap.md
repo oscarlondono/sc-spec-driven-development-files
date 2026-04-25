@@ -2,6 +2,10 @@
 
 Each phase is a single, deployable unit of work. Phases are ordered by dependency — each one builds on the previous.
 
+## Cross-Phase UX Requirement
+
+- The web UI must present all currently available user options (navigation actions and supported API options) in an obvious, human-readable way.
+
 ## Phase 1 — Project Scaffold
 
 - Initialize Next.js 14 project with TypeScript and App Router

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import AvailableOptions from '@/components/available-options';
 import { prisma } from '@/lib/prisma';
 import BookingForm from './booking-form';
 
@@ -36,7 +37,12 @@ export default async function AgentDetailPage({ params }: AgentDetailPageProps) 
   }
 
   return (
-    <main className="mx-auto grid w-full max-w-6xl gap-6 p-4 sm:gap-8 sm:p-8 lg:grid-cols-[1.2fr_1fr]">
+    <main className="mx-auto w-full max-w-6xl p-4 sm:p-8">
+      <div className="mb-6 sm:mb-8">
+        <AvailableOptions agentId={agent.id} />
+      </div>
+
+      <div className="grid gap-6 sm:gap-8 lg:grid-cols-[1.2fr_1fr]">
       <section className="rounded-xl border p-4 sm:p-6">
         <p className="mb-2 text-xs uppercase tracking-wide text-muted-foreground">Agent Profile</p>
         <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">{agent.name}</h1>
@@ -88,6 +94,7 @@ export default async function AgentDetailPage({ params }: AgentDetailPageProps) 
       </section>
 
       <BookingForm agentId={agent.id} />
+      </div>
     </main>
   );
 }

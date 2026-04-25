@@ -53,11 +53,13 @@
 20. Keep auth at placeholder level only; do not add a full auth provider in MVP.
 21. Defer filtering/search/pagination to post-MVP.
 22. Keep code TypeScript-first and aligned to current project conventions.
+23. Add an "Available Options" inventory to user-facing web pages so users can see every currently available option.
 
 ## Task Group 7 — Validation Pass
 
-23. Run `pnpm validate`.
-24. Run `pnpm build`.
-25. Run API smoke checks for all MVP endpoints with expected status codes.
-26. Perform responsive verification (mobile + desktop) for MVP dashboard pages.
-27. Validate end-to-end booking flow against seeded data.
+24. Run `pnpm validate`.
+25. Run `pnpm build`.
+26. Run API smoke checks for all MVP endpoints with expected status codes.
+27. Perform responsive verification (mobile + desktop) for MVP dashboard pages.
+28. Validate end-to-end booking flow against seeded data.
+29. Verify "Available Options" inventory is visible and accurate on user-facing pages.

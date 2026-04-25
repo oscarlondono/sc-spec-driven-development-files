@@ -37,3 +37,4 @@
 15. Run `pnpm validate` to ensure existing test suite still passes.
 16. Run `pnpm build` to ensure TypeScript and Next.js build remain healthy.
 17. Verify no unexpected regressions in current app behavior.
+18. Confirm existing web UI still surfaces all currently available user options.

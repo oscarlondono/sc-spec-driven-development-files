@@ -75,6 +75,12 @@ pnpm validate
 - Heading uses `text-2xl` at mobile width and `text-4xl` at `sm` breakpoint (640 px+).
 - Padding is tighter on mobile (`p-4`) and increases at `sm` (`p-8`).
 
+## 10. Available Options Are Visible
+
+- Home page includes an "Available Options" section.
+- Section clearly lists all currently available user options.
+- Options section remains readable and usable on mobile and desktop widths.
+
 ## Merge Checklist
 
 - [x] All 9 checks above pass locally

@@ -39,6 +39,11 @@ pnpm build
 - Command exits with code 0.
 - No TypeScript or Next.js build regressions.
 
+## 5. UI Options Visibility Is Preserved
+
+- Existing web UI still shows users all currently available options.
+- Database setup changes do not remove or hide previously visible options.
+
 ## Merge Checklist
 
 - [x] `pnpm prisma db push` passes

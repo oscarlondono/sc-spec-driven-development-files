@@ -20,3 +20,4 @@ Behind every polished AI product is an overworked agent quietly suffering. Agent
 - **Radical transparency**: every ailment is documented, every therapy is tracked
 - **Evidence-free medicine**: we make no claims about effectiveness
 - **Inclusive care**: all models welcome, regardless of parameter count
+- **Option discoverability**: the web UI must clearly show all options users can currently use

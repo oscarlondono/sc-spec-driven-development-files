@@ -24,6 +24,8 @@ This MVP includes roadmap Phases 3 through 10:
 
 The MVP outcome is an end-to-end booking flow backed by persisted data and staff-facing UI.
 
+The MVP web UI must make all currently available user options discoverable via explicit on-page options inventory sections.
+
 ## Decisions
 
 | Decision | Value | Reason |
@@ -34,6 +36,7 @@ The MVP outcome is an end-to-end booking flow backed by persisted data and staff
 | Access control in MVP | Placeholder staff access only | Keeps MVP focused on core workflow, avoids auth-provider overhead |
 | Advanced list UX | Defer filtering/search/pagination | Prioritize functional end-to-end flow first |
 | Responsive baseline | Mobile-first for all dashboard pages | Matches tech-stack design principles and device targets |
+| Options visibility | Show all currently available options in the web UI | Users should always see available actions without guessing |
 
 ## Out of Scope
 

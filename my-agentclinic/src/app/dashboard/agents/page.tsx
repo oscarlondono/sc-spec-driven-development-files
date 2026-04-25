@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
+import AvailableOptions from '@/components/available-options';
 import { buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -74,6 +75,10 @@ export default function AgentsDashboardPage() {
           <span className="font-medium text-foreground">{totalAppointments}</span>
         </p>
       </header>
+
+      <div className="mb-6 sm:mb-8">
+        <AvailableOptions />
+      </div>
 
       {loading ? (
         <p className="rounded-lg border p-6 text-sm text-muted-foreground">Loading agents...</p>

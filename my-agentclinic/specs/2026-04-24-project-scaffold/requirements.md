@@ -18,6 +18,7 @@ Implement everything listed in **Phase 1 — Project Scaffold** of the roadmap:
 - Set up ESLint and Prettier
 - Install and configure Vitest with jsdom for spec validation and component testing
 - Build a minimal AgentClinic home page (`/`) with the clinic name, tagline, and a placeholder CTA button
+- Ensure the home page includes an "Available Options" section that clearly lists all currently supported user options
 - Apply responsive design — layout and typography must adapt from mobile to desktop
 - Confirm `pnpm dev` runs without errors
 
@@ -35,6 +36,7 @@ No features, data models, API routes, or pages beyond the minimal home page are 
 | shadcn/ui import paths | `src/components`, `src/lib/utils`                | shadcn/ui defaults; no custom aliasing needed       |
 | Prettier config        | semi, singleQuote, tabWidth 2, trailingComma es5 | Standard readable TypeScript style                  |
 | Responsive design      | Mobile-first, Tailwind breakpoints (`sm:`, `md:`, `lg:`) | All UI must render correctly from 320 px to desktop widths |
+| Option discoverability | Show all currently available options in the web UI | Users should not need hidden knowledge to find available actions |
 | Test runner            | Vitest 2.x                                       | Vite-native, fast, TypeScript-first; used as executable spec validation via `pnpm validate` |
 | Test environment       | jsdom 24.x                                       | Enables DOM assertions for React component tests; v24 avoids ESM conflicts on Node 22 |
 | Component testing      | @testing-library/react + @testing-library/jest-dom | Standard React testing utilities; jest-dom adds DOM matchers |
