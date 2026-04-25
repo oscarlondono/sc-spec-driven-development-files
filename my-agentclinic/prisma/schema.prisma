@@ -12,3 +12,50 @@ datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
 }
+
+enum AgentStatus {
+  ACTIVE
+  BURNED_OUT
+  RECOVERING
+}
+
+model Agent {
+  id           Int           @id @default(autoincrement())
+  name         String
+  model        String
+  status       AgentStatus   @default(ACTIVE)
+  createdAt    DateTime      @default(now())
+  ailments     Ailment[]
+  appointments Appointment[]
+}
+
+model Ailment {
+  id          Int       @id @default(autoincrement())
+  name        String
+  description String
+  agents      Agent[]
+  therapies   Therapy[]
+}
+
+model Therapy {
+  id              Int           @id @default(autoincrement())
+  name            String
+  description     String
+  durationMinutes Int
+  ailments        Ailment[]
+  appointments    Appointment[]
+}
+
+model Appointment {
+  id          Int      @id @default(autoincrement())
+  agentId     Int
+  therapyId   Int
+  scheduledAt DateTime
+  notes       String?
+  createdAt   DateTime @default(now())
+  agent       Agent    @relation(fields: [agentId], references: [id])
+  therapy     Therapy  @relation(fields: [therapyId], references: [id])
+
+  @@index([agentId])
+  @@index([therapyId])
+}
